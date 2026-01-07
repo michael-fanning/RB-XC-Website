@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-	background-color:blue; 
+	background-color: rgba(0, 51, 153); 
 	color:white;
 	font-family: arial;
 	float:right
@@ -18,7 +18,7 @@ h4.tyt{
 }
 
 h4.listwa{
-	background-color: blue; 
+	background-color: rgba(0, 51, 153); 
 	color:white;
 	font-family: arial;
 	float:right;
@@ -84,7 +84,7 @@ a.pion {
 	width:130;
 	text-decoration:none;
 	color:white;
-	background-color:blue;
+	background-color: rgba(0, 51, 153);
 	padding:0.2em 0.6em;
 	border-bottom:3px solid white;
 	font-family: verdana, tahoma,helvetica, sans-serif; font-size:75%;
@@ -177,7 +177,7 @@ td {
 }
 
 td.kol{
-	background-color:blue;
+	background-color: rgba(0, 51, 153);
 }
 
 td.kol2{
