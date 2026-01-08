@@ -1,5 +1,11 @@
 <style type="text/css">
 
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
 :root {
     --rb-blue: rgb(0, 51, 153);
     --rb-white: #ffffff;
@@ -8,7 +14,7 @@
 header {
     background-color: var(--rb-blue) !important;
     width: 100% !important;
-    margin: 0 !important;
+    margin-top: 0 !important;
     padding: 60px 0 !important; 
     display: block !important;
     box-sizing: border-box !important; 
