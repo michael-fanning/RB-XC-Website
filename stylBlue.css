@@ -1,14 +1,12 @@
 <style type="text/css">
 
 header {
-    background-color: rgb(0, 51, 153) !important; /* Forces the color */
+    background-color: rgb(0, 51, 153);
     color: white;
     text-align: center;
     width: 100%;
     margin: 0;
-    /* We use large padding to ensure blue goes above the text and below buttons */
     padding: 50px 0 50px 0; 
-    /* This rule makes the header 'hug' everything inside it tightly */
     display: block;
     overflow: hidden; 
     clear: both;
@@ -18,7 +16,6 @@ h1 {
     background-color: transparent;
     color: white;
     font-family: 'Oswald', sans-serif;
-    /* Setting margins to 0 ensures no white gaps leak out the top */
     margin: 0 auto 20px auto; 
     padding: 0;
     display: block;
