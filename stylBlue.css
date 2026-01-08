@@ -17,7 +17,7 @@ header {
     width: 100% !important;
     margin-top: 0 !important;
     /* Reduced from 60px to 20px to make the bar much thinner */
-    padding: 15px 0 !important; 
+    padding: 10px 0 !important; 
     display: block !important;
     box-sizing: border-box !important; 
 }
