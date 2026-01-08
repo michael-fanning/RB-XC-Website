@@ -1,7 +1,12 @@
 <style type="text/css">
 
+:root {
+    --rb-blue: rgb(0, 51, 153);
+    --rb-white: #ffffff;
+    --rb-accent: rgba(255, 255, 255, 0.1);
+}
 header {
-    background-color: rgb(0, 51, 153) !important;
+    background-color: var(--rb-blue) !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 60px 0 !important; 
