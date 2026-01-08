@@ -19,12 +19,17 @@ h1 {
     display: block;
 }
 
+#top-banner {
+    display: block !important;
+    clear: both !important;
+    position: relative !important;
+    z-index: 999 !important;
+}
+
 .button-container {
-    display: block; 
-    text-align: center;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    display: block !important;
+    text-align: center !important;
+    margin: 0 auto !important;
 }
 
 button {
