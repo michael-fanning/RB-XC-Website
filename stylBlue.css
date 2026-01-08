@@ -24,12 +24,17 @@ h1 {
     color: white !important;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 3.5rem;
+    
+    font-size: clamp(24px, 5vw, 3.5rem) !important;
+    white-space: nowrap; 
+    overflow: hidden;
+    
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.2;
     margin: 0 auto 30px auto !important; 
-    max-width: 90%;
+    max-width: 95%;
+    text-align: center;
 }
 
 .button-container {
