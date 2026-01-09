@@ -12,6 +12,14 @@ html, body {
     --rb-accent: rgba(255, 255, 255, 0.1);
 }
 
+#top-banner {
+	background-color: var(--rb-blue);
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	padding: 3px;
+}
+
 header {
 	position: sticky !important;
     top: 0 !important;
