@@ -55,6 +55,8 @@ button {
     cursor: pointer;
     background: var(--rb-blue) !important;
     transition: all 0.3s ease;
+	border-radius: 8px;
+    border: none !important;
 }
 
 button:hover {
