@@ -164,7 +164,7 @@ a.pion {
 	font-family: verdana, tahoma,helvetica, sans-serif; font-size:75%;
 }
 
-
+/*
 a:link {
 	color: white;
 }
@@ -175,6 +175,7 @@ a:hover {
 	background-color:tan; 
 	color:white
 }
+*/
 a:active {
 	color:gray;
 }
