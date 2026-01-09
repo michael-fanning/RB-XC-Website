@@ -10,21 +10,8 @@
       <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-        <div id="top-banner">
-          <h1 style="color: white !important; margin: 0 0 20px 0;">RANCHO BERNARDO HIGH SCHOOL Cross Country</h1>
-        
-          <div class="button-container">
-            <a href="index.html"><button>News</button></a>
-            <a href="bronco.html"><button>Bronco Round-Up</button></a>
-            <a href="schedule.html"><button>Schedule</button></a>
-            <a href="results.html"><button>Results</button></a>
-            <a href="roster.html"><button>Roster</button></a>
-            <a href="photos.html"><button>Photos</button></a>
-            <a href="coaches.html"><button>Coaches</button></a>
-          </div>
-        </div>
-    </header>
+
+    <?php include 'header.php'; ?>
     
     <table width="844" cellspacing="0" cellpadding="0" border="0" align="center">
       <tbody>
