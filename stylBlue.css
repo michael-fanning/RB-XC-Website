@@ -62,7 +62,6 @@ button {
 button:hover {
     background: white !important;
     color: rgb(0, 51, 153) !important;
-    border: 1px solid white !important;
 }
 
 body { 
