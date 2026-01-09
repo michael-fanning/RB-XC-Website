@@ -20,6 +20,13 @@ html, body {
 	padding: 5px;
 }
 
+#header-placeholder {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    width: 100%;
+}
+
 header {
 	position: sticky !important;
     top: 0 !important;
