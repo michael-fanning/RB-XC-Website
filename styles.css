@@ -92,7 +92,6 @@ body {
     font-family: verdana, tahoma, helvetica, sans-serif;
 }
 
-
 p {
     text-align: left;
     max-width: 650px;
@@ -122,7 +121,7 @@ h2 {
 	background-color: transparent;
 }
 
-p {
+/*p {
 	background-color: transparent;
 	font-family: verdana, tahoma,helvetica, sans-serif;
 	font-size: 75%;
@@ -130,7 +129,7 @@ p {
 	text-align:justify; 
 	margin-top: 0; 
 	margin-bottom: 0;
-}
+}*/
 
 p.podpis {
 	text-align:right;
