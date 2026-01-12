@@ -14,12 +14,29 @@ function initCarousel() {
     const images = document.querySelectorAll('.carousel-slide img');
     const nextBtn = document.querySelector('#nextBtn');
     const prevBtn = document.querySelector('#prevBtn');
+  const dots = document.querySelectorAll('.dot'); // ADD THIS
 
     if(!slide || images.length === 0) return;
 
     function updateSlide() {
         slide.style.transform = `translateX(${-100 * counter}%)`;
+        
+        dots.forEach((dot, index) => {
+            if(index === counter) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
     }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            counter = index;
+            updateSlide();
+            startTimer();
+        });
+    });
 
     function startTimer() {
         clearInterval(slideInterval);
