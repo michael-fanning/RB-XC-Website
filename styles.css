@@ -104,6 +104,54 @@ p.text {
     text-indent: 40px;
 }
 
+.carousel-container {
+    position: relative;
+    max-width: 844px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 51, 153, 0.6);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+#nextBtn { 
+	right: 0; 
+	border-radius: 5px 0 0 5px; 
+}
+#prevBtn { 
+	left: 0; 
+	border-radius: 0 5px 5px 0;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background: rgba(0, 51, 153, 1);
+}
+
+/*
 h4.tyt{
 	background-color:transparent; 
 	color:black;
@@ -129,7 +177,7 @@ h2 {
 	text-align:justify; 
 	margin-top: 0; 
 	margin-bottom: 0;
-}*/
+}*//*
 
 p.podpis {
 	text-align:right;
@@ -194,7 +242,7 @@ a:hover {
 	background-color:tan; 
 	color:white
 }
-*/
+*//*
 a:active {
 	color:gray;
 }
@@ -294,4 +342,5 @@ table.zramka {
 	border-style: solid;
 	border-width: 1px; border-color:blue;
 }
+*/
 </style>
