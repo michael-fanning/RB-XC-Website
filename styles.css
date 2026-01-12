@@ -106,8 +106,7 @@ p.text {
 
 .carousel-container {
     position: relative;
-    max-width: 844px;
-	max-height: 675px;
+    max-width: 600px;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 8px;
