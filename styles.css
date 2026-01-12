@@ -120,6 +120,7 @@ p.text {
 }
 
 .carousel-slide img {
+	flex: 0 0 100%;
     width: 100%;
     height: auto;
     display: block;
