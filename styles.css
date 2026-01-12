@@ -111,6 +111,7 @@ p.text {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+	aspect-ratio: 5 / 4;
 }
 
 .carousel-slide {
@@ -122,6 +123,7 @@ p.text {
     width: 100%;
     height: auto;
     display: block;
+	object-fit: cover;
 }
 
 #prevBtn, #nextBtn {
