@@ -5,8 +5,9 @@ function loadHeader() {
 }
 loadHeader();
 
-//Carousel
+// Carousel Logic
 let counter = 0;
+let slideInterval;
 
 function initCarousel() {
     const slide = document.querySelector('.carousel-slide');
@@ -16,21 +17,31 @@ function initCarousel() {
 
     if(!slide || images.length === 0) return;
 
+    function updateSlide() {
+        slide.style.transform = `translateX(${-100 * counter}%)`;
+    }
+
+    function startTimer() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(() => {
+            nextBtn.click();
+        }, 5000);
+    }
+
     nextBtn.addEventListener('click', () => {
         counter++;
         if (counter >= images.length) counter = 0;
-        slide.style.transform = `translateX(${-100 * counter}%)`;
+        updateSlide();
+        startTimer();
     });
 
     prevBtn.addEventListener('click', () => {
         counter--;
         if (counter < 0) counter = images.length - 1;
-        slide.style.transform = `translateX(${-100 * counter}%)`;
+        updateSlide();
+        startTimer();
     });
-
-    setInterval(() => {
-        nextBtn.click();
-    }, 5000);
+    startTimer();
 }
 
 window.addEventListener('DOMContentLoaded', initCarousel);
