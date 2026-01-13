@@ -5,6 +5,16 @@ function loadHeader() {
 }
 loadHeader();
 
+function loadFooter() {
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(err => console.error('Error loading footer:', err));
+}
+loadFooter();;
+
 // Carousel Logic
 let counter = 0;
 let slideInterval;
