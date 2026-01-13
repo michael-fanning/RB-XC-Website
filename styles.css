@@ -180,4 +180,61 @@ p.text {
     border-radius: 10px;
 }
 
+.site-footer {
+    background-color: var(--rb-blue);
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-family: 'Oswald', sans-serif;
+    clear: both; 
+}
+
+.footer-content {
+    max-width: 844px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section p, .footer-section a {
+    font-family: verdana, sans-serif;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.footer-social-icon {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: verdana, sans-serif;
+}
+
 </style>
