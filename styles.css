@@ -55,6 +55,22 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: black !important;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 1.75rem) !important; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin: 0 auto 15px auto !important;
+    margin-bottom: 3px;
+    max-width: 95%;
+    text-align: center;
+}
+
 .button-container {
     display: block !important;
     text-align: center !important;
