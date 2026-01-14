@@ -60,10 +60,9 @@ h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: clamp(2.5rem, 3vw, 3rem) !important; 
-    overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 1.1;
+    /*line-height: 1.1;*/
     margin: 6px auto 3px auto !important; 
     max-width: 95%;
     text-align: center;
