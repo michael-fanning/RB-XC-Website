@@ -198,21 +198,27 @@ p.text {
 }
 
 .footer-content {
-    max-width: 90%; 
-    width: 844px;
+    /* Changed from 844px to 100% or a much larger number to allow stretching */
+    max-width: 1400px; 
+    width: 95%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    /* This pushes the sections away from each other as the box stretches */
+    justify-content: space-between; 
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .footer-section {
+    /* 'flex: 1' allows the boxes to grow equally to fill the extra space */
     flex: 1;
-    min-width: 200px;
+    /* Keeps them from getting too skinny on small screens */
+    min-width: 250px; 
     margin-bottom: 20px;
     text-align: center;
+    /* Added padding to keep text from touching the 'invisible' box edges */
+    padding: 0 10px;
 }
 
 .footer-section h3 {
