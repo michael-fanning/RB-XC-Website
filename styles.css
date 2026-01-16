@@ -76,7 +76,6 @@ button {
     display: inline-block;
     margin: 8px 8px 2px 8px;
     margin-bottom: 2px;
-    /* Updated Padding: Scalable, but stays between 6px and 10px vertically */
     padding: clamp(6px, 1.5vw, 10px) clamp(12px, 2.5vw, 20px); 
     color: white !important;
     font-family: 'Oswald', sans-serif;
@@ -198,27 +197,27 @@ p.text {
 }
 
 .footer-content {
-    /* Changed from 844px to 100% or a much larger number to allow stretching */
     max-width: 1400px; 
     width: 95%;
     margin: 0 auto;
     display: flex;
-    /* This pushes the sections away from each other as the box stretches */
-    justify-content: space-between; 
-    align-items: flex-start;
+	/*justify-content: space-between; */
+	align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .footer-section {
-    /* 'flex: 1' allows the boxes to grow equally to fill the extra space */
     flex: 1;
-    /* Keeps them from getting too skinny on small screens */
     min-width: 250px; 
     margin-bottom: 20px;
     text-align: center;
-    /* Added padding to keep text from touching the 'invisible' box edges */
     padding: 0 10px;
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-section h3 {
