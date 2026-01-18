@@ -1,18 +1,9 @@
-html {
-	background-color: var(--rb-blue);
-}
-
 html, body {
+    margin: 0 !important;
     padding: 0 !important;
     width: 100%;
-	/*overscroll-behavior:none;*/
 }
 
-body {
-	background-color: white; 
-    min-height: 100vh;
-    margin: 0;
-}
 
 :root {
     --rb-blue: rgb(0, 51, 153);
@@ -121,9 +112,6 @@ header {
     display: block !important;
     box-sizing: border-box !important;
 	overflow: hidden !important;
-
-	border-top: 500px solid var(--rb-blue);
-	margin-top: -500px !important;
 }
 
 
