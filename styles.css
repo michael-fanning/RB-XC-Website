@@ -1,13 +1,7 @@
-html {
-    background-color: var(--rb-blue); 
-}
-
-body {
-    background-color: white; 
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
 }
 
 :root {
