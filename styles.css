@@ -1,8 +1,17 @@
+html {
+	background-color: var(--rb-blue);
+}
+
 html, body {
-    margin: 0 !important;
     padding: 0 !important;
     width: 100%;
-	overscroll-behavior:none;
+	/*overscroll-behavior:none;*/
+}
+
+body {
+	background-color: white; 
+    min-height: 100vh;
+    margin: 0;
 }
 
 :root {
