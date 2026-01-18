@@ -20,37 +20,7 @@ body {
     --rb-accent: rgba(255, 255, 255, 0.1);
 }
 
-#top-banner {
-	background-color: var(--rb-blue);
-	width: 100%;
-	margin: 0;
-	text-align: center;
-	padding: 5px;
-}
 
-#header-placeholder {
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 1000 !important;
-    width: 100%;
-}
-
-header {
-	position: sticky !important;
-    top: 0 !important;
-    z-index: 1000 !important;	
-    background-color: var(--rb-blue) !important;
-    width: 100% !important;
-    margin-top: 0 !important;
-    padding: 5px 0 0 0 !important; 
-	padding-bottom: 1px;
-    display: block !important;
-    box-sizing: border-box !important;
-	overflow: hidden !important;
-
-	border-top: 500px solid var(--rb-blue);
-    margin-top: -500px !important;
-}
 
 h1 {
     color: white !important;
@@ -77,6 +47,20 @@ h2 {
     max-width: 95%;
     text-align: center;
     display: block;
+}
+
+p {
+    text-align: left;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 clamp(15px, 3vw, 25px);
+    font-size: clamp(13px, 1.3vw, 20px);
+    line-height: 1.6;
+}
+
+p.text {
+    text-indent: clamp(20px, 4vw, 40px);
 }
 
 .button-container {
@@ -108,24 +92,38 @@ button:hover {
     color: rgb(0, 51, 153) !important;
 }
 
-body { 
-    margin: 0; 
-    padding: 0;
-    font-family: verdana, tahoma, helvetica, sans-serif;
+
+
+#top-banner {
+	background-color: var(--rb-blue);
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	padding: 5px;
 }
 
-p {
-    text-align: left;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 clamp(15px, 3vw, 25px);
-    font-size: clamp(13px, 1.3vw, 20px);
-    line-height: 1.6;
+#header-placeholder {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    width: 100%;
 }
 
-p.text {
-    text-indent: clamp(20px, 4vw, 40px);
+header {
+	position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;	
+    background-color: var(--rb-blue) !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+    padding: 5px 0 0 0 !important; 
+	padding-bottom: 1px;
+    display: block !important;
+    box-sizing: border-box !important;
+	overflow: hidden !important;
+
+	border-top: 500px solid var(--rb-blue);
+	margin-top: -500px !important;
 }
 
 
