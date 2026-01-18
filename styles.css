@@ -10,12 +10,6 @@ body {
     margin: 0;
 }
 
-/*html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100%;
-}*/
-
 :root {
     --rb-blue: rgb(0, 51, 153);
     --rb-white: #ffffff;
