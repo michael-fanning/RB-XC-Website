@@ -203,9 +203,11 @@ p.text {
     background-color: var(--rb-blue);
     color: white;
     padding: clamp(20px, 5vw, 40px) 20px;
-    margin-top: 40px;
+	margin-top: auto;
+	margin-bottom: 0 !important;
+	/*margin-top: 40px;*/
     font-family: 'Oswald', sans-serif;
-    clear: both; 
+    clear: both;
 }
 
 .footer-content {
