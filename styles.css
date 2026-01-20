@@ -39,6 +39,19 @@ h2 {
     display: block;
 }
 
+h3 {
+    color: black !important;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 2.75vw, 2.75rem) !important; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 6px auto 3px auto !important; 
+    max-width: 95%;
+    text-align: center;
+    display: block;
+}
+
 p {
     text-align: left;
     max-width: 650px;
@@ -80,6 +93,14 @@ button {
 button:hover {
     background: white !important;
     color: rgb(0, 51, 153) !important;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 40px auto;
+    width: 80%;
 }
 
 
