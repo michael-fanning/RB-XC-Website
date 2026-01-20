@@ -15,7 +15,8 @@ function loadFooter() {
 }
 loadFooter();;
 
-// Carousel Logic
+
+
 let counter = 0;
 let slideInterval;
 
@@ -24,7 +25,7 @@ function initCarousel() {
     const images = document.querySelectorAll('.carousel-slide img');
     const nextBtn = document.querySelector('#nextBtn');
     const prevBtn = document.querySelector('#prevBtn');
-  const dots = document.querySelectorAll('.dot'); // ADD THIS
+  const dots = document.querySelectorAll('.dot');
 
     if(!slide || images.length === 0) return;
 
@@ -69,6 +70,17 @@ function initCarousel() {
         startTimer();
     });
     startTimer();
+}
+
+function handleDropdown(selectElement) {
+    const url = selectElement.value;
+    if (url === "none") {
+        alert("No meet was held in 2020.");
+        selectElement.selectedIndex = 0;
+    } else if (url) {
+        window.open(url, '_blank');
+        selectElement.selectedIndex = 0;
+    }
 }
 
 window.addEventListener('DOMContentLoaded', initCarousel);
