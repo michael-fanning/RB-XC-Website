@@ -13,7 +13,7 @@ html, body {
 
 
 h1 {
-    color: white !important;
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: clamp(10px, 4vw, 2.5rem) !important;
@@ -27,13 +27,13 @@ h1 {
 }
 
 h2 {
-    color: black;/**/
+    color: black;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: clamp(2.5rem, 3vw, 3rem); /**/
+    font-size: clamp(2.5rem, 3vw, 3rem);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 6px auto 3px auto; /**/
+    margin: 6px auto 3px auto;
     max-width: 95%;
     text-align: center;
     display: block;
@@ -207,7 +207,7 @@ header {
 
 
 .table-container {
-    width: 100%;
+    width: 95%;
     overflow-x: auto;
     margin: 20px auto;
     max-width: 800px;
