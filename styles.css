@@ -254,7 +254,7 @@ header {
 
 
 .results-archive {
-    width: 95%;
+    /*width: 95%;*/
     max-width: 500px;
     margin: 40px auto;
     text-align: center;
