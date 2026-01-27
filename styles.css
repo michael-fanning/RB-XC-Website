@@ -211,11 +211,13 @@ header {
     overflow-x: auto;
     margin: 20px auto;
     max-width: 800px;
+	border-radius: 12px;
+    overflow: hidden;
 }
 
 .race-schedule {
     width: 100%;
-    border-collapse: collapse;
+	border-collapse: separate;
     font-family: Arial, sans-serif;
     background-color: white;
 }
@@ -251,30 +253,11 @@ header {
     border-right: 2px solid #ddd;
 }
 
-
-/*
-.results-archive {
-    max-width: 500px;
-    margin: 40px auto;
-    text-align: center;
-    padding: 25px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+.race-schedule tr:last-child td {
+    border-bottom: none;
 }
 
-#results-dropdown {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid var(--rb-blue);
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 1rem;
-    color: #333;
-    background-color: white;
-}
-*/
+
 
 .results-archive {
     box-sizing: border-box;
@@ -319,73 +302,6 @@ header {
     font-family: 'Oswald', sans-serif;
 }
 
-
-
-.site-footer {
-    background-color: var(--rb-blue);
-    color: white;
-    padding: clamp(20px, 5vw, 40px) 20px;
-	margin-top: auto;
-	margin-bottom: 0 !important;
-    font-family: 'Oswald', sans-serif;
-    clear: both;
-}
-
-.footer-content {
-    max-width: 1400px; 
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-	align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 250px; 
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 0 10px;
-
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.footer-section h3 {
-	font-size: clamp(15px, 1.5vw, 20px);
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.footer-section p, .footer-section a {
-    font-family: verdana, sans-serif;
-    font-size: clamp(10px, 1vw, 15px);
-    color: white;
-    text-decoration: none;
-    line-height: 1.5;
-}
-
-.footer-social-icon {
-    width: clamp(30px, 3vw, 40px);
-    height: clamp(30px, 3vw, 40px);
-    display: inline-block;
-    margin-top: 5px;
-    border-radius: 8px;
-}
-
-.footer-bottom {
-    text-align: center;
-    width: 100%;
-    font-size: clamp(8px, 0.9vw, 12px);
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    font-family: verdana, sans-serif;
-}
 
 
 .schedule-container {
@@ -468,4 +384,72 @@ header {
         padding: 10px; 
         font-size: 12px; 
     }
+}
+
+
+
+.site-footer {
+    background-color: var(--rb-blue);
+    color: white;
+    padding: clamp(20px, 5vw, 40px) 20px;
+	margin-top: auto;
+	margin-bottom: 0 !important;
+    font-family: 'Oswald', sans-serif;
+    clear: both;
+}
+
+.footer-content {
+    max-width: 1400px; 
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+	align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; 
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 10px;
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-section h3 {
+	font-size: clamp(15px, 1.5vw, 20px);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section p, .footer-section a {
+    font-family: verdana, sans-serif;
+    font-size: clamp(10px, 1vw, 15px);
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.footer-social-icon {
+    width: clamp(30px, 3vw, 40px);
+    height: clamp(30px, 3vw, 40px);
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    font-size: clamp(8px, 0.9vw, 12px);
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: verdana, sans-serif;
 }
