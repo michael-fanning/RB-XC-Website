@@ -362,3 +362,98 @@ header {
     font-family: verdana, sans-serif;
 }
 
+.schedule-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 40px auto;
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.schedule-title {
+    background-color: var(--rb-blue);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.xc-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: verdana, sans-serif;
+    font-size: 14px;
+}
+
+.xc-schedule thead {
+    background-color: #f8f9fa;
+}
+
+.xc-schedule th {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.xc-schedule td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+/* Zebra Striping */
+.xc-schedule tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Highlight special events like Picture Day or Banquets */
+.special-event {
+    background-color: #fff4e6 !important;
+    font-style: italic;
+}
+
+.schedule-note {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Mobile Tweak */
+@media (max-width: 600px) {
+    .xc-schedule th { padding: 10px; font-size: 10px; }
+    .xc-schedule td { padding: 10px; font-size: 12px; }
+}
+
+/* Add this to your existing CSS */
+.meet-link {
+    color: var(--rb-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.meet-link:hover {
+    text-decoration: underline;
+    color: #002266;
+}
+
+/* Ensure table cells handle text well on small screens */
+.xc-schedule td {
+    padding: 12px 8px;
+    line-height: 1.4;
+}
+
+.special-event td {
+    background-color: #f0f4ff; /* Very light blue for non-meet events */
+    font-style: italic;
+    color: #444;
+}
