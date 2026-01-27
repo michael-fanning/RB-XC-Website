@@ -252,9 +252,8 @@ header {
 }
 
 
-
+/*
 .results-archive {
-    /*width: 95%;*/
     max-width: 500px;
     margin: 40px auto;
     text-align: center;
@@ -263,13 +262,6 @@ header {
     border: 1px solid #ddd;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.recent-links {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 30px;
 }
 
 #results-dropdown {
@@ -281,6 +273,39 @@ header {
     font-size: 1rem;
     color: #333;
     background-color: white;
+}
+*/
+
+.results-archive {
+    box-sizing: border-box;
+    width: 95%;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 25px clamp(10px, 5%, 25px); 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#results-dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--rb-blue);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+}
+
+.recent-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
 }
 
 .result-btn {
@@ -362,7 +387,9 @@ header {
     font-family: verdana, sans-serif;
 }
 
+
 .schedule-container {
+    box-sizing: border-box;
     width: 95%;
     max-width: 900px;
     margin: 40px auto;
@@ -370,16 +397,6 @@ header {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    box-sizing: border-box;
-}
-
-.schedule-title {
-    background-color: var(--rb-blue);
-    color: white;
-    margin: 0;
-    padding: 20px;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
 }
 
 .xc-schedule {
@@ -390,51 +407,33 @@ header {
 }
 
 .xc-schedule thead {
-    background-color: #f8f9fa;
+    background-color: var(--rb-blue);
 }
 
 .xc-schedule th {
     padding: 15px;
     text-align: left;
-    border-bottom: 2px solid #eee;
+    color: white;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
-    color: #666;
+    border-bottom: none;
 }
 
+.xc-schedule tr:first-child th:first-child { border-top-left-radius: 12px; }
+.xc-schedule tr:first-child th:last-child { border-top-right-radius: 12px; }
+
 .xc-schedule td {
-    padding: 15px;
+    padding: 12px 15px;
     border-bottom: 1px solid #eee;
     vertical-align: middle;
 }
 
-/* Zebra Striping */
 .xc-schedule tbody tr:nth-child(even) {
     background-color: #fafafa;
 }
 
-/* Highlight special events like Picture Day or Banquets */
-.special-event {
-    background-color: #fff4e6 !important;
-    font-style: italic;
-}
-
-.schedule-note {
-    text-align: center;
-    font-size: 12px;
-    color: #888;
-    padding: 15px;
-    margin: 0;
-}
-
-/* Mobile Tweak */
-@media (max-width: 600px) {
-    .xc-schedule th { padding: 10px; font-size: 10px; }
-    .xc-schedule td { padding: 10px; font-size: 12px; }
-}
-
-/* Add this to your existing CSS */
 .meet-link {
     color: var(--rb-blue);
     text-decoration: none;
@@ -446,14 +445,27 @@ header {
     color: #002266;
 }
 
-/* Ensure table cells handle text well on small screens */
-.xc-schedule td {
-    padding: 12px 8px;
-    line-height: 1.4;
-}
-
 .special-event td {
-    background-color: #f0f4ff; /* Very light blue for non-meet events */
+    background-color: #f0f4ff !important;
     font-style: italic;
     color: #444;
+}
+
+.schedule-note {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    padding: 15px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .xc-schedule th { 
+        padding: 10px; 
+        font-size: 11px; 
+    }
+    .xc-schedule td { 
+        padding: 10px; 
+        font-size: 12px; 
+    }
 }
