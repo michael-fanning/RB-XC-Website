@@ -453,35 +453,32 @@ header {
     font-family: verdana, sans-serif;
 }
 
-/* Container to hold both columns side-by-side */
+
 .roster-grid {
     display: flex;
-    flex-wrap: wrap; /* Allows stacking on mobile */
-    gap: 20px;       /* Space between the two tables */
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+	margin-bottom: 5px;
     padding: 0 15px;
 }
 
-/* Individual column logic */
 .roster-column {
-    flex: 1;         /* Forces tables to be equal width */
-    min-width: 320px; /* If screen is smaller than this, they stack */
+    flex: 1;
+    min-width: 320px;
 }
 
-/* Specific adjustment for side-by-side tables */
 .roster-column .schedule-container {
-    width: 100%;     /* Ensure table fills its half of the screen */
-    margin: 10px 0;  /* Reduce vertical margins for side-by-side look */
+    width: 100%; 
+    margin: 10px 0;
 }
 
-/* Keeps the "Girls" header dark navy as requested */
 .girls-roster-table thead {
     background-color: #002266 !important;
 }
 
-/* Ensure names don't get squished too much on desktop */
 .xc-schedule td:first-child {
     width: 70%;
 }
