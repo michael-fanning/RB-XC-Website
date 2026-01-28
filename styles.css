@@ -207,49 +207,49 @@ header {
 
 .table-container {
     width: 95%;
-    overflow-x: auto;
-    margin: 20px auto;
     max-width: 800px;
-	border-radius: 12px;
+    margin: 20px auto;
+    border-radius: 12px;
     overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .race-schedule {
     width: 100%;
-	border-collapse: separate;
+    border-collapse: collapse;
     font-family: Arial, sans-serif;
     background-color: white;
 }
 
 .race-schedule th {
-    padding: 12px;
+    padding: 15px;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     color: white;
+    border: none;
 }
 
 .boys-header { background-color: var(--rb-blue); }
 .girls-header { background-color: #002266; }
 
 .race-schedule td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
     font-size: 14px;
-}
-
-.div2-row {
-    background-color: #f2f2f2;
+    color: #333;
 }
 
 .race-schedule td:nth-child(even) {
     font-weight: bold;
     text-align: right;
     padding-right: 20px;
+    color: var(--rb-blue);
 }
 
-.race-schedule td:nth-child(2) {
-    border-right: 2px solid #ddd;
+.div2-row {
+    background-color: #f9f9f9;
 }
 
 .race-schedule tr:last-child td {
@@ -387,6 +387,69 @@ header {
 
 
 
+.roster-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.roster-column {
+    flex: 1;         
+    min-width: 300px;
+}
+
+.roster-wrapper {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.roster-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-family: verdana, sans-serif;
+}
+
+.roster-table thead {
+    background-color: var(--rb-blue);
+}
+
+.roster-table.girls-theme thead {
+    background-color: #002266;
+}
+
+.roster-table th {
+    padding: 15px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.roster-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.roster-table td:first-child {
+    font-weight: bold;
+    width: 75%;
+}
+
+.roster-table td:last-child {
+    text-align: center;
+}
+
+
+
 .site-footer {
     background-color: var(--rb-blue);
     color: white;
@@ -451,66 +514,4 @@ header {
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-family: verdana, sans-serif;
-}
-
-
-.roster-grid {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 30px;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 15px;
-}
-
-.roster-column {
-    flex: 1;         
-    min-width: 300px;
-}
-
-.roster-wrapper {
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.roster-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    font-family: verdana, sans-serif;
-}
-
-.roster-table thead {
-    background-color: var(--rb-blue);
-}
-
-.roster-table.girls-theme thead {
-    background-color: #002266;
-}
-
-.roster-table th {
-    padding: 15px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.roster-table td {
-    padding: 12px 15px;
-    border-bottom: 1px solid #eee;
-}
-
-.roster-table td:first-child {
-    font-weight: bold;
-    width: 75%;
-}
-
-.roster-table td:last-child {
-    text-align: center;
 }
