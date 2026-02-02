@@ -449,6 +449,50 @@ header {
 }
 
 
+/* Container for the 2x3 grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
+    width: 95%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Individual button styling */
+.res-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rb-blue);
+    color: white !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-height: 50px;
+}
+
+/* Hover state matching the Bronco theme */
+.res-btn:hover {
+    background-color: white;
+    color: var(--rb-blue) !important;
+    box-shadow: inset 0 0 0 2px var(--rb-blue);
+}
+
+/* Responsive: 1 column when screen is thin (mobile) */
+@media (max-width: 600px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+
 
 .site-footer {
     background-color: var(--rb-blue);
