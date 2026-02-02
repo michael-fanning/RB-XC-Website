@@ -449,13 +449,14 @@ header {
 }
 
 
-/* Container: Locked to 3 columns max, but responsive */
+/* Container: Handles the 3x2 -> 2x3 -> 1x6 step-down */
 .results-grid {
     display: grid;
-    /* Forces exactly 3 columns on desktop, will drop to 1 on small screens */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px;
+    /* 260px is the "sweet spot" to trigger these specific rows/columns based on max-width */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    gap: 15px;
     width: 95%;
+    /* Max-width set so 3 columns fit perfectly at 900px */
     max-width: 900px; 
     margin: 30px auto;
     padding: 10px;
@@ -478,26 +479,27 @@ header {
     min-height: 60px;
     box-sizing: border-box;
     
-    /* Transition for color and the "Bigger" hover effect */
+    /* Hover Animation */
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
                 background-color 0.3s ease, 
                 box-shadow 0.3s ease;
 }
 
-/* Hover state: 1.1 scale makes the growth very noticeable */
+/* Hover state */
 .res-btn:hover {
     background-color: white;
     color: var(--rb-blue) !important;
     box-shadow: inset 0 0 0 2px var(--rb-blue), 0 10px 20px rgba(0,0,0,0.15);
-    transform: scale(1.1); /* Increased to 10% larger for more impact */
+    transform: scale(1.08); 
     z-index: 10;
 }
 
-/* Transition to 1x6 when screen is too thin for 3 across */
-@media (max-width: 700px) {
+/* Tablet/Mobile Adjustment */
+@media (max-width: 580px) {
     .results-grid {
-        grid-template-columns: 1fr; /* Switches to 1 column */
-        max-width: 400px; /* Keeps buttons from getting too long on mobile */
+        /* Forces the jump to 1 column slightly earlier for better readability */
+        grid-template-columns: 1fr;
+        max-width: 400px;
     }
 }
 
