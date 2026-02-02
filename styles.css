@@ -449,20 +449,16 @@ header {
 }
 
 
-/* Container: Handles the 3x2 -> 2x3 -> 1x6 step-down */
 .results-grid {
     display: grid;
-    /* 260px is the "sweet spot" to trigger these specific rows/columns based on max-width */
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
     gap: 15px;
     width: 95%;
-    /* Max-width set so 3 columns fit perfectly at 900px */
     max-width: 900px; 
     margin: 30px auto;
     padding: 10px;
 }
 
-/* Individual button styling */
 .res-btn {
     display: flex;
     align-items: center;
@@ -479,13 +475,11 @@ header {
     min-height: 60px;
     box-sizing: border-box;
     
-    /* Hover Animation */
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
                 background-color 0.3s ease, 
                 box-shadow 0.3s ease;
 }
 
-/* Hover state */
 .res-btn:hover {
     background-color: white;
     color: var(--rb-blue) !important;
@@ -494,10 +488,8 @@ header {
     z-index: 10;
 }
 
-/* Tablet/Mobile Adjustment */
 @media (max-width: 580px) {
     .results-grid {
-        /* Forces the jump to 1 column slightly earlier for better readability */
         grid-template-columns: 1fr;
         max-width: 400px;
     }
