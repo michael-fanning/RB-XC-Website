@@ -497,6 +497,59 @@ header {
 
 
 
+.stats-archive {
+    box-sizing: border-box;
+    width: 95%;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 25px clamp(10px, 5%, 25px); 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#stats-dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--rb-blue);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+}
+
+.recent-links-stats {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.stat-btn {
+    flex: 1;
+    background-color: var(--rb-blue);
+    color: white !important;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+}
+
+.stat-btn:hover {
+    opacity: 0.9;
+}
+
+
+
 .site-footer {
     background-color: var(--rb-blue);
     color: white;
