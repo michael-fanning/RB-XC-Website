@@ -63,23 +63,21 @@
 
 
 	<div class="stats-archive">
-	    <p><b>PREVIOUS STATS BOOKS:</b></p>
-	    <div class="recent-links-stats">
-	        <a href="statbook/RBHS_XC_StatBook2024.pdf" target="_blank" class="stat-btn">2024 Stats</a>
-	        <a href="statbook/RBHS_XC_StatBook2023.pdf" target="_blank" class="stat-btn">2023 Stats</a>
-	    </div>
-	    
-	    <select id="stats-dropdown" onchange="window.open(this.value, '_blank')">
-	        <option value="" disabled selected>View Older Stat Books...</option>
-	        <option value="statbook/RBHS_XC_StatBook2022.pdf">2022 Stat Book</option>
-	        <option value="statbook/RBHS_XC_StatBook2021.pdf">2021 Stat Book</option>
-	        <option value="statbook/RBHS_XC_StatBook2020.pdf">2020 Stat Book</option>
-	        <option value="statbook/RBHS_XC_StatBook2019.pdf">2019 Stat Book</option>
-	        <option value="statbook/RBHS_XC_StatBook2018.pdf">2018 Stat Book</option>
-	        <option value="statbook/RBHS_XC_StatBook2017.pdf">2017 Stat Book</option>
-	        <option value="statbook/RBHS_XC_StatBook2016.pdf">2016 Stat Book</option>
-	    </select>
-	</div>
+        <p><b>PREVIOUS STATS BOOKS:</b></p>
+        
+        <select id="stats-dropdown" onchange="if(this.value) window.open(this.value, '_blank')">
+            <option value="" disabled selected>Select...</option>
+            <option value="statbook/RBHS_XC_StatBook2024.pdf">2024</option>
+            <option value="statbook/RBHS_XC_StatBook2023.pdf">2023</option>
+            <option value="statbook/RBHS_XC_StatBook2022.pdf">2022</option>
+            <option value="statbook/RBHS_XC_StatBook2021.pdf">2021</option>
+            <option value="statbook/RBHS_XC_StatBook2020.pdf">2020</option>
+            <option value="statbook/RBHS_XC_StatBook2019.pdf">2019</option>
+            <option value="statbook/RBHS_XC_StatBook2018.pdf">2018</option>
+            <option value="statbook/RBHS_XC_StatBook2017.pdf">2017</option>
+            <option value="statbook/RBHS_XC_StatBook2016.pdf">2016</option>
+        </select>
+    </div>
 
 	<div id="footer-placeholder"></div>
   </body>
