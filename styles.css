@@ -290,6 +290,14 @@ header {
     margin-bottom: 30px;
 }
 
+.recent-links:hover {
+    background-color: white;
+    color: var(--rb-blue) !important;
+    box-shadow: inset 0 0 0 2px var(--rb-blue), 0 10px 20px rgba(0,0,0,0.15);
+    transform: scale(1.05); 
+    z-index: 10;
+}
+
 .result-btn {
     flex: 1;
     background-color: var(--rb-blue);
@@ -484,7 +492,7 @@ header {
     background-color: white;
     color: var(--rb-blue) !important;
     box-shadow: inset 0 0 0 2px var(--rb-blue), 0 10px 20px rgba(0,0,0,0.15);
-    transform: scale(1.08); 
+    transform: scale(1.05); 
     z-index: 10;
 }
 
@@ -521,13 +529,6 @@ header {
     color: #333;
     background-color: white;
     cursor: pointer;
-}
-
-.recent-links-stats {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 20px;
 }
 
 .stat-btn {
