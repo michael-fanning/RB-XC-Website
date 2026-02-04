@@ -6,11 +6,10 @@ html, body {
 
 :root {
     --rb-blue: rgb(0, 51, 153);
-    --rb-white: #ffffff;
 }
 
 
-
+/*TEXT & PLACEHOLDER STYLES*/
 h1 {
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -112,6 +111,8 @@ hr {
 	padding: 5px;
 }
 
+
+/*HEADER STYLES*/
 #header-placeholder {
     position: sticky !important;
     top: 0 !important;
@@ -134,7 +135,7 @@ header {
 }
 
 
-
+/*INDEX STYLES*/
 .carousel-container {
     position: relative;
     width: 90%;
@@ -204,7 +205,7 @@ header {
 }
 
 
-
+/*BRONCO STYLES*/
 .table-container {
     width: 95%;
     max-width: 800px;
@@ -255,7 +256,6 @@ header {
 .race-schedule tr:last-child td {
     border-bottom: none;
 }
-
 
 
 .results-archive {
@@ -309,6 +309,8 @@ header {
     z-index: 10;
 }
 
+
+/*SCHEDULE STYLES*/
 .schedule-container {
     box-sizing: border-box;
     width: 95%;
@@ -392,7 +394,7 @@ header {
 }
 
 
-
+/*ROSTER STYLES*/
 .roster-grid {
     display: flex;
     flex-wrap: wrap; 
@@ -455,6 +457,7 @@ header {
 }
 
 
+/*RESULTS STYLES*/
 .results-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
@@ -502,7 +505,6 @@ header {
 }
 
 
-
 .stats-archive {
     box-sizing: border-box;
     width: 95%;
@@ -548,7 +550,7 @@ header {
 }
 
 
-
+/*COACHES STYLES*/
 .coaches-container {
     display: flex;
     flex-wrap: wrap;
@@ -595,7 +597,7 @@ header {
 }
 
 
-
+/*FOOTER STYLES*/
 .site-footer {
     background-color: var(--rb-blue);
     color: white;
