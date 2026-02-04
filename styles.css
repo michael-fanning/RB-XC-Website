@@ -549,18 +549,49 @@ header {
 
 
 
+.coaches-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 0 15px;
+}
+
+.coach-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+}
+
 .coach-img {
     display: block;
-    margin: 20px auto; 
-    width: 90%;
-    max-width: 400px;
+    margin: 10px auto; 
+    width: 100%;
     height: auto; 
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-h3, .coach-img + p {
+.coach-card h3 {
+    margin-bottom: 5px;
+}
+
+.coach-card p {
     text-align: center;
+    margin-top: 10px;
+}
+
+.coach-card p a {
+    color: var(--rb-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.coach-card p a:hover {
+    text-decoration: underline;
 }
 
 
