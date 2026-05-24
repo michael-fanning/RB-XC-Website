@@ -118,10 +118,16 @@ button:hover {
     padding: 10px;
 }
 
-@media (max-width: 580px) {
-    .btn-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
+@media (min-width: 875px) {
+    .btn-grid:has(.btn:nth-child(5):last-child) {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-grid:has(.btn:nth-child(5):last-child) .btn {
+        flex: 1 1 260px; 
+        max-width: calc(33.333% - 10px); 
     }
 }
 
