@@ -71,13 +71,8 @@ ul {
     margin-right: auto;
     padding: 0 clamp(15px, 3vw, 25px);
     font-size: clamp(13px, 1.3vw, 20px);
-	/* 1. Keep your base horizontal padding */
     padding: 0 clamp(15px, 3vw, 25px); 
-    
-    /* 2. Add the paragraph's indent value to the left padding */
     padding-left: calc(clamp(15px, 3vw, 25px) + clamp(20px, 4vw, 40px));
-    
-    /* 3. Forces the bullet to sit inside the alignment box */
     list-style-position: inside;
     line-height: 1.6;
 }
