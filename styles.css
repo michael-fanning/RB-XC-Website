@@ -166,7 +166,6 @@ hr {
 }
 
 
-
 #top-banner {
 	background-color: var(--rb-blue);
 	width: 100%;
@@ -479,6 +478,9 @@ header {
     text-transform: uppercase;
     text-align: left;
 }
+
+.roster-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
 
 .roster-table td {
     padding: 12px 15px;
