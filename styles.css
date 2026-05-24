@@ -479,6 +479,7 @@ header {
 
 .roster-table tbody tr:nth-child(even) {
     background-color: #fafafa;
+}
 
 .roster-table td {
     padding: 12px 15px;
@@ -569,7 +570,6 @@ header {
     margin-bottom: 20px;
     text-align: center;
     padding: 0 10px;
-
 	display: flex;
     flex-direction: column;
     align-items: center;
