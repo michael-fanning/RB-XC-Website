@@ -64,6 +64,16 @@ p.text {
     text-indent: clamp(20px, 4vw, 40px);
 }
 
+ul {
+    text-align: left;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 clamp(15px, 3vw, 25px);
+    font-size: clamp(13px, 1.3vw, 20px);
+    line-height: 1.6;
+}
+
 .button-container {
     display: block !important;
     text-align: center !important;
