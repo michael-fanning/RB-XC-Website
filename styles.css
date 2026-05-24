@@ -116,6 +116,32 @@ button:hover {
     z-index: 10;
 }
 
+.archive {
+	box-sizing: border-box;
+	width: 95%;
+	max-width: 500px;
+	margin: 40px auto;
+	text-align: center;
+	padding: 25px clamp(10px, 5%, 25px); 
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--rb-blue);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+	cursor: pointer;
+}
+
 hr {
     border: 0;
     height: 1px;
@@ -409,42 +435,12 @@ header {
     padding: 10px;
 }
 
-.res-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--rb-blue);
-    color: white !important;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 10px;
-    border-radius: 8px;
-    text-align: center;
-    min-height: 60px;
-    box-sizing: border-box;
-    
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-                background-color 0.3s ease, 
-                box-shadow 0.3s ease;
-}
-
-.res-btn:hover {
-    background-color: white;
-    color: var(--rb-blue) !important;
-    box-shadow: inset 0 0 0 2px var(--rb-blue), 0 10px 20px rgba(0,0,0,0.15);
-    transform: scale(1.05); 
-    z-index: 10;
-}
-
 @media (max-width: 580px) {
     .results-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
     }
 }
-
 
 .stats-archive {
     box-sizing: border-box;
