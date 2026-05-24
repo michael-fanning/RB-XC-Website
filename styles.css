@@ -69,6 +69,8 @@ ul {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
+	margin-top: 0;
+    margin-bottom: 0;
     padding: 0 clamp(15px, 3vw, 25px);
     font-size: clamp(13px, 1.3vw, 20px);
     padding: 0 clamp(15px, 3vw, 25px); 
