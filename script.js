@@ -23,8 +23,8 @@ let slideInterval;
 function initCarousel() {
     const slide = document.querySelector('.carousel-slide');
     const images = document.querySelectorAll('.carousel-slide img');
-    const next-btn = document.querySelector('#next-btn');
-    const prev-btn = document.querySelector('#prev-btn');
+    const next_btn = document.querySelector('#next-btn');
+    const prev_btn = document.querySelector('#prev-btn');
   const dots = document.querySelectorAll('.dot');
 
     if(!slide || images.length === 0) return;
@@ -52,18 +52,18 @@ function initCarousel() {
     function startTimer() {
         clearInterval(slideInterval);
         slideInterval = setInterval(() => {
-            next-btn.click();
+            next_btn.click();
         }, 5000);
     }
 
-    next-btn.addEventListener('click', () => {
+    next_btn.addEventListener('click', () => {
         counter++;
         if (counter >= images.length) counter = 0;
         updateSlide();
         startTimer();
     });
 
-    prev-btn.addEventListener('click', () => {
+    prev_btn.addEventListener('click', () => {
         counter--;
         if (counter < 0) counter = images.length - 1;
         updateSlide();
