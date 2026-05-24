@@ -241,7 +241,7 @@ header {
     object-fit: cover;
 }
 
-#prevBtn, #nextBtn {
+#prev-btn, #next-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -255,8 +255,8 @@ header {
     z-index: 10;
 }
 
-#next { right: 0; border-radius: 5px 0 0 5px; }
-#prev { left: 0; border-radius: 0 5px 5px 0; }
+#next-btn { right: 0; border-radius: 5px 0 0 5px; }
+#prev-btn { left: 0; border-radius: 0 5px 5px 0; }
 
 .carousel-indicators {
     position: absolute;
