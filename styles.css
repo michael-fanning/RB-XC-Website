@@ -108,6 +108,23 @@ button:hover {
     color: rgb(0, 51, 153) !important;
 }
 
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    gap: 15px;
+    width: 95%;
+    max-width: 900px; 
+    margin: 30px auto;
+    padding: 10px;
+}
+
+@media (max-width: 580px) {
+    .btn-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
+
 .btn {
     flex: 1;
     background-color: var(--rb-blue);
@@ -408,25 +425,6 @@ header {
     .schedule-table td { 
         padding: 10px; 
         font-size: 12px; 
-    }
-}
-
-
-/*RESULTS STYLES*/
-.results-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
-    gap: 15px;
-    width: 95%;
-    max-width: 900px; 
-    margin: 30px auto;
-    padding: 10px;
-}
-
-@media (max-width: 580px) {
-    .results-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
     }
 }
 
