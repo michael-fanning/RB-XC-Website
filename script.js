@@ -27,7 +27,7 @@ function initCarousel() {
     const prev_btn = document.querySelector('#prev-btn');
   const dots = document.querySelectorAll('.dot');
 
-    if(!slide || images.length === 0) return;
+    if(!slide || images.length === 0 || !next_btn || !prev_btn) return;
 
     function updateSlide() {
         slide.style.transform = `translateX(${-100 * counter}%)`;
